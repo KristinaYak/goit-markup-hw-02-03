@@ -1,0 +1,166 @@
+:root {
+    /*Fonts*/
+    --main-font: Roboto , sans-serif;
+    --secondary-font: Raleway , sans-serif;
+
+    /*Text colors*/
+    --main-txt-cl: #212121;
+    --light-txt-cl: #757575;
+    --accent-txt-cl: #2196F3;
+    
+
+
+
+
+    /*Background colors*/
+    --main-bg-cl:#FFFFFF;
+    --accent-bg-cl: #2196F3;
+
+
+    /*Others*/
+}
+
+.page{
+    color: var(--main-txt-cl);
+    position: absolute;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    font-family: var(--main-font)
+   
+}
+
+/*reset*/
+.link {
+    text-decoration: none;
+    color: currentColor
+    
+}
+.link .active {
+    color: var(--accent-txt-cl);
+}
+
+.list {
+    list-style: none;
+}
+
+/*header*/
+.logo {
+   
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    color:var(--accent-txt-cl);
+    font-family: var(--secondary-font)
+   
+    }
+.header {
+    background:var(--main-bg-cl);
+}
+.header.link {
+    
+    color: var(--light-txt-cl); 
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+   
+
+}
+
+.header.link :hover,
+.header.link :focus {
+    color: var(--accent-txt-cl)
+}
+
+
+    /*section Ефективні рішення для вашого бізнесу*/
+   
+ 
+    .main-title {
+      
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+   
+
+    }
+    .btn {
+       
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
+    background: var(--accent-bg-cl);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    /*sestion Наші особливості*/
+    .title {
+    width: 270px;
+    height: 16px;
+    left: 215px;
+    top: 774px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    color: var(--main-txt-cl)
+
+    }
+    .title-list {
+    width: 270px;
+    height: 72px;
+    left: 215px;
+    top: 800px;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    color:var(--light-txt-cl)
+    }
+/*section Чим ми займаємось*/
+.section-title {
+  width: 366px;
+    height: 42px;
+    left: 617px;
+    top: 966px;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color:var(--main-txt-cl)
+}
+
+/*our team*/
+
+
+.team-name {
+    
+width: 129px;
+height: 19px;
+left: 286px;
+top: 1922px;
+
+font-size: 16px;
+line-height: calc(19 / 16);
+color:var(--main-txt-cl)
+}
+.team-position {
+    
+width: 147px;
+height: 19px;
+left: 577px;
+top: 1951px;
+font-size: 16px;
+line-height: calc(19 / 16);
+color: var(--light-txt-cl)
+}
+/*footer*/
+.footer.link :hover,
+.footer.link :focus {
+    color: var(--accent-txt-cl)
+}
+
+
