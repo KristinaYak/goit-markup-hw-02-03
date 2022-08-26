@@ -25,33 +25,34 @@
   text-decoration: none;
 }
 .header {
+ 
   background: var(--main-bg-cl);
- 
 }
-.header.link.link-item.current {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
- 
-font-weight: 500;
+.header .link .list-item  {
+  
+  
+  text-decoration: none;
+  font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--main-txt-cl);
 }
-
+.link {
+    text-decoration: none;
+}
 .current {
   color: var(--accent-txt-cl);
 }
-.link-item {
-    color:  var(--light-txt-cl);
-    
+
+.list-item {
+  color: var(--light-txt-cl);
+  text-decoration: none;
 }
-.link-item.current {
-    color: var(--accent-txt-cl);  
-}
-.link-item:hover,
-.link-item:focus {
-    color: var(--accent-txt-cl);
+
+.list-item:hover,
+.list-item:focus {
+  color: var(--accent-txt-cl);
 }
 
 .header .link:hover,
@@ -75,9 +76,9 @@ font-weight: 500;
   color: var(--accent-txt-cl);
 }
 
-
 .list {
   list-style: none;
+  text-decoration: none;
 }
 .list-item {
   background: var(--main-bg-cl);
