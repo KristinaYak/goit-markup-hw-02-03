@@ -19,14 +19,13 @@
     <!--Шапка сторінки-->
     <header class="header">
       <nav class="main-nav">
-        <a class="main-link activ" href="logo">Web</a>
-        <a class="main-link" href="logo">Studio</a>
+        <a class="main-link activ" href="logo">Web<span class="main-link">Studio</span></a>
         <ul class="list">
           <li class="list-item">
-            <a class="link" href="студія">Студія</a>
+            <a class="link" href="./index.html">Студія</a>
           </li>
           <li class="list-item">
-            <a class="link-activ" href="портфоліо">Портфоліо</a>
+            <a class="link activ" href="портфоліо">Портфоліо</a>
           </li>
           <li class="list-item">
             <a class="link" href="контакти">Контакти</a>
@@ -35,24 +34,28 @@
       </nav>
       <ul class="list">
         <li class="list-item" >
-          <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <a class="link-item" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
         <li class="list-item">
-          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <a class="link-item" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
-      <div class="group">
-        <!--Навігація кнопками-->
-        <button class="btn active" type="button">Усі</button>
-        <button class="btn" type="button">Веб-сайти</button>
-        <button class="btn" type="button">Додатки</button>
-        <button class="btn" type="button">Дизайн</button>
-        <button class="btn" type="button">Маркетинг</button>
-      </div>
+       <!--Портфоліо-->
+      <section class="group">
+        <h1 visually-hidden class="visually-hidden">Портфоліо</h1>
+        <ul class="list">
+          <li class="list-item"><button class="btn active" type="button">Усі</button></li>
+          <li class="list-item"><button class="btn" type="button">Веб-сайти</button></li>
+          <li class="list-item"><button class="btn" type="button">Додатки</button></li>
+          <li class="list-item"><button class="btn" type="button">Дизайн</button></li>
+          <li class="list-item"><button class="btn" type="button">Маркетинг</button></li>
+        </ul>
+      </section>
+      
       <!--детальніша інформація після навігації-->
-      <div class="group">
+      <section class="group">
         <ul class="list">
           <li class="list-item-group">
             <img
@@ -61,7 +64,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Технокряк</h1>
+            <h2 class="main-title">Технокряк</h2>
             <p class="title">Веб-сайт</p>
           </li>
           <li class="list-item-group">
@@ -71,7 +74,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Постер New Orlean vs Golden Star</h1>
+            <h2 class="main-title">Постер New Orlean vs Golden Star</h2>
             <p class="title">Дизайн</p>
           </li>
           <li class="list-item-group">
@@ -81,7 +84,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Ресторан Seafood</h1>
+            <h2 class="main-title">Ресторан Seafood</h2>
             <p class="title">Додаток</p>
           </li>
           <li class="list-item-group">
@@ -91,7 +94,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Проєкт Prime</h1>
+            <h2 class="main-title">Проєкт Prime</h2>
             <p class="title">Маркетинг</p>
           </li>
           <li class="list-item-group">
@@ -101,7 +104,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Проєкт Prime</h1>
+            <h2 class="main-title">Проєкт Prime</h2>
             <p class="title">Додаток</p>
           </li>
           <li class="list-item-group">
@@ -112,7 +115,7 @@
               height="294"
             />
 
-            <h1 class="main-title">Inspiration has no Borders</h1>
+            <h2 class="main-title">Inspiration has no Borders</h2>
             <p class="title">Веб-сайт</p>
           </li>
           <li class="list-item-group">
@@ -122,7 +125,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Видання Limited Edition</h1>
+            <h2 class="main-title">Видання Limited Edition</h2>
             <p class="title">Дизайн</p>
           </li>
           <li class="list-item-group">
@@ -132,7 +135,7 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Проєкт LAB</h1>
+            <h2 class="main-title">Проєкт LAB</h2>
             <p class="title">Маркетинг</p>
           </li>
           <li class="list-item-group">
@@ -142,16 +145,15 @@
               width="370"
               height="294"
             />
-            <h1 class="main-title">Growing Business</h1>
+            <h2 class="main-title">Growing Business</h2>
             <p class="title">Додаток</p>
           </li>
         </ul>
-    </div>
+      </section>
     </main>
     <footer class="footer">
-      <a class="main activ" href="logo">Web</a>
-      <a class="main" href="logo">Studio</a>
-      <address>
+      <a class="main activ" href="logo">Web<span class="main">Studio</span></a>
+       <address>
         <ul>
           <li class="footer-list-item">
             <a class="footer-link"

@@ -6,19 +6,22 @@
   /*Text color*/
   --main-txt-cl: #212121;
   --accent-txt-cl: #2196f3;
+  --light-txt-cl:  #ffffff;
+  --lightgrey-txt-cl: #757575;
   /*Background color*/
-  --mai-bg-cl: #f5f5f5;
+  --main-bg-cl: #f5f5f5;
+  --accent-bg-cl: #2196f3;
+  --light-bg-cl: #ffffff;
   /*Others*/
 }
 
 .body {
   font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+ font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-txt-cl);
 }
 
 /*Шапка сторінки*/
@@ -27,18 +30,29 @@
   background-color: var(--main-font);
 }
 
-.header .link {
-  font-family: "Roboto", sans-serif;
+.header .link,
+.link-item {
+ 
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-txt-cl);
 }
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-txt-cl);
+  
+}
+
+
+.link-item:hover,
+.link-item:focus {
+    color: var(--accent-txt-cl);
+}
+.link-item {
+    color: var(--lightgrey-txt-cl);
 }
 
 .main-link {
@@ -53,14 +67,30 @@
 
 .main-link.activ,
 .link.activ {
-  color: #2196f3;
+  color:var(--accent-txt-cl);
 }
 
 .list {
   list-style: none;
 }
-/*Навігація кнопками*/
 
+
+
+
+/*Портфоліо*/
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 .btn {
   font-family: inherit;
   cursor: pointer;
@@ -70,31 +100,35 @@
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-txt-cl);
+  
+}
+.btn:hover,
+.btn:focus {
+background-color:var(--accent-bg-cl);
+box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color:var(--light-txt-cl);
 }
 
 .btn.active {
-  width: 73px;
-  height: 38px;
-  background: #2196f3;
+  
+  background:var(--accent-bg-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  color: #ffffff;
+  color:var(--light-txt-cl);
 }
-.btn .active:hover,
-.btn .active:focus {
-  background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
+
+
+
+
 
 /*детальніша інформація після навігації*/
 
 .list-item-group {
   width: 370px;
   height: 404px;
-  background: #ffffff;
+  background:var(--light-bg-cl);
 }
 
 .main-title {
@@ -104,16 +138,16 @@
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-txt-cl);
 }
 
 .title {
-  font-family: "Roboto";
+
   font-style: normal;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--lightgrey-txt-cl);
 }
 
 /*footer*/
@@ -128,10 +162,10 @@
   font-size: 26px;
   line-height: calc(31 / 26);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--light-txt-cl);
 }
 .main.activ {
-  color: #2196f3;
+  color: var(--accent-txt-cl);
 }
 .footer-list-item {
   list-style: none;
@@ -139,19 +173,19 @@
 
 .footer-link,
 .footer-link-item {
-  font-family: "Roboto";
+
   font-style: normal;
   text-decoration: none;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--light-txt-cl);
 }
 .footer-link-item {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer-link-item:hover,
 .footer-link-item:focus {
-  color: #2196f3;
+  color: var(--accent-txt-cl);
 }
